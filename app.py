@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, redirect, render_template
 
 app = Flask(__name__)
 
@@ -22,3 +22,10 @@ def bemvindo(usuario):
 def quadrado(n):
     resultado = n ** 2
     return f"{n}² = {resultado}"
+
+
+@app.route('/home')
+def index():
+    return redirect('/')
+
+
