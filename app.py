@@ -12,3 +12,8 @@ def versao():
     versao = "1.1.0"
     return f"App v{versao}"
 
+
+@app.get("/saudar/<usuario>") 
+def bemvindo(usuario):
+   return f"<h1>Bem-vindo, {usuario.capitalize()}!<h1>"
+
