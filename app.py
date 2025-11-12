@@ -25,7 +25,7 @@ def quadrado(n):
 
 
 @app.route('/home')
-def index():
+def home():
     return redirect('/')
 
 
