@@ -17,3 +17,8 @@ def versao():
 def bemvindo(usuario):
    return f"<h1>Bem-vindo, {usuario.capitalize()}!<h1>"
 
+
+@app.route('/quadrado/<int:n>')
+def quadrado(n):
+    resultado = n ** 2
+    return f"{n}² = {resultado}"
